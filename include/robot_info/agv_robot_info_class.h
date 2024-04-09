@@ -3,6 +3,7 @@
 #include <string>
 
 #include "robot_info/robot_info_class.h"
+#include "robot_info/hydraulic_system_monitor.h"
 
 #include "ros/node_handle.h"
 #include "ros/publisher.h"
@@ -23,5 +24,7 @@ protected:
 
 private:
     std::string maximum_payload;    // The maximum weight the robot can transport
+
+    HydraulicSystemMonitor hydraulicSysMon; // Monitors the hydraulics of the robot
 
 };

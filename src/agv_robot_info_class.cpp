@@ -19,4 +19,6 @@ void AGVRobotInfo::publish_data()
 void AGVRobotInfo::fill_info_msg()
 {
     info_msg.data_05 = "maximum_payload: " + maximum_payload;
+
+    hydraulicSysMon.fill_in_msg(info_msg);
 }
