@@ -1,5 +1,4 @@
 #include "robot_info/agv_robot_info_class.h"
-#include "robot_info/robot_info_class.h"
 
 
 AGVRobotInfo::AGVRobotInfo(ros::NodeHandle &nh)
