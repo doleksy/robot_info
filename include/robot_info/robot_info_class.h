@@ -5,7 +5,7 @@
 #include "ros/node_handle.h"
 #include "ros/publisher.h"
 
-#include "robot_info_msg/robot_info_10.h"
+#include "robotinfo_msgs/RobotInfo10Fields.h"
 
 
 class RobotInfo
@@ -20,7 +20,7 @@ protected:
     virtual void fill_info_msg();   // Builds the info message
 
 protected:
-    robot_info_msg::robot_info_10 info_msg; // The robot info message
+    robotinfo_msgs::RobotInfo10Fields info_msg; // The robot info message
 
     ros::Publisher info_pub;        // The robot's info publisher
 

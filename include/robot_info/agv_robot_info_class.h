@@ -8,7 +8,7 @@
 #include "ros/node_handle.h"
 #include "ros/publisher.h"
 
-#include "robot_info_msg/robot_info_10.h"
+#include "robotinfo_msgs/RobotInfo10Fields.h"
 
 
 class AGVRobotInfo : public RobotInfo

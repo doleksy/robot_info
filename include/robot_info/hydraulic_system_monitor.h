@@ -2,17 +2,17 @@
 
 #include <string>
 
-#include "robot_info_msg/robot_info_10.h"
+#include "robotinfo_msgs/RobotInfo10Fields.h"
 
 
 class HydraulicSystemMonitor
 {
 public:
-    void fill_in_msg(robot_info_msg::robot_info_10 &msg)
+    void fill_in_msg(robotinfo_msgs::RobotInfo10Fields &msg)
     {
-        msg.data_06 = "hydraulic_oil_temperature: " + hydraulic_oil_temperature;
-        msg.data_07 = "hydraulic_oil_tank_level: " + hydraulic_oil_tank_level;
-        msg.data_08 = "hydraulic_oil_pressure: " + hydraulic_oil_pressure;
+        msg.data_field_06 = "hydraulic_oil_temperature: " + hydraulic_oil_temperature;
+        msg.data_field_07 = "hydraulic_oil_tank_level: " + hydraulic_oil_tank_level;
+        msg.data_field_08 = "hydraulic_oil_pressure: " + hydraulic_oil_pressure;
     }
 
 private:
